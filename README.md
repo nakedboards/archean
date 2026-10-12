@@ -1,10 +1,23 @@
 # Archean
 
-A semi-modular synthesizer built around a Teensy 4.0, made by [Nakedboards](https://nakedboards.online).
+An open-source, monophonic, semi-modular patchable synthesizer built around a Teensy 4.0, made by
+[Nakedboards](https://nakedboards.online). Its design is inspired by the Archean eon, an early
+period of Earth's development -- it's meant to be a platform for exploration and learning as much
+as a musical instrument.
 
-Archean combines a monophonic digital voice (wavetable oscillator, software ADSR, LFO) with a
-small set of patchable CV/gate I/O, so it behaves like a hybrid between a standalone synth and a
-module you can drop into an existing modular rig.
+* **Sound engine** -- a single patchable voice covering about seven octaves (16 Hz to 2093 Hz),
+  with three waveform modes (randomly generated "landscapes," smoothly evolving terrain, and a
+  classic triangle wave), a built-in filter, LFO, ADSR envelope, voltage-controlled delay, and
+  numerous patch points for modulation and sound design.
+* **Controls** -- a 22-key touch-sensitive keyboard with mineral-shaped keys, and a distance
+  sensor that outputs both CV and MIDI-CC for theremin-like expressive control.
+* **Connectivity** -- USB-MIDI, MIDI In/Out via 3.5 mm TRS, CV/Gate inputs, line-level and
+  Eurorack-level audio outputs, and Eurorack compatibility.
+* **Open-source** -- firmware runs on a Teensy 4.0 and is programmable via the Arduino IDE;
+  schematics are openly available so components can be replaced and features modified or added.
+
+Full details, specs, and pricing (fully assembled or as a DIY kit) are on the
+[product page](https://nakedboards.online/archean).
 
 This repository holds the hardware side of the project: schematics, panel/BOM info, and the stock
 firmware the instrument ships with.
